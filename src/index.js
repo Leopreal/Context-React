@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { CounterContextProvider } from './contextos/CounterContext';
+import { TitleColorContextProvider } from './contextos/TitleColorContext';
 
 
 
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <CounterContextProvider>
+    <TitleColorContextProvider>
     <App />
+    </TitleColorContextProvider>
     </CounterContextProvider>
   </React.StrictMode>
 );

@@ -1,7 +1,15 @@
+import { useContext } from "react"
+
+import { CounterContext } from "../contextos/CounterContext"
 
 const Produtos = () => {
+  const {counter} = useContext(CounterContext)
+
   return (
-    <div>Produtos</div>
+    <div>
+      <h1>Home</h1>
+      <p>valor: {counter}</p>
+    </div>
   )
 }
 
